@@ -1,0 +1,55 @@
+lua-zlib
+------------------------------------------
+This Lua package provides a library to access zlib library functions and 
+also to read/write gzip files using an interface similar to the base io 
+package.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  lua-5.1.3-1
+  zlib-1.2.3-2
+
+Build requirements:
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://luaforge.net/projects/lzlib/
+
+Canonical download:
+  http://luaforge.net/frs/?group_id=350
+
+-------------------------------------------
+
+Build instructions:
+  unpack lua-zlib-0.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./lua-zlib-0.3-X.cygport all
+
+This will create:
+  /usr/src/lua-zlib-0.3-X-src.tar.bz2
+  /usr/src/lua-zlib-0.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/lua/5.1/gzip.dll
+  /usr/lib/lua/5.1/zlib.dll
+  /usr/share/doc/lua-zlib-0.3/README
+  /usr/share/doc/lua-zlib-0.3/README.lgzip
+
+------------------
+
+Port Notes:
+
+----- version 0.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

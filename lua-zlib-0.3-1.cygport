@@ -1,0 +1,21 @@
+inherit lua
+
+ORIG_PN="lzlib"
+
+DESCRIPTION="Lua zlib bindings"
+HOMEPAGE="http://luaforge.net/projects/lzlib/"
+SRC_URI="http://luaforge.net/frs/download.php/3059/${ORIG_PN}-${PV}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	exeinto ${LUA_LIBDIR}
+	doexe *.dll
+
+	dodoc README.lgzip
+}
