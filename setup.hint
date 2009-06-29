@@ -1,5 +1,5 @@
 category: Lua
-requires: cygwin lua zlib
+requires: lua zlib
 sdesc: "Lua zlib library"
 ldesc: "This Lua package provides a library to access zlib library 
 functions and also to read/write gzip files using an interface similar 
